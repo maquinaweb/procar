@@ -2,6 +2,7 @@ import Brands from '@/components/Brands';
 import Gallery from '@/components/Gallery';
 import OurNumbers from '@/components/OurNumbers';
 import Services from '@/components/Services';
+import SocialMedia from '@/components/SocialMedia';
 import Welcome from '@/components/Welcome';
 
 function Home() {
@@ -16,6 +17,8 @@ function Home() {
       <Gallery />
 
       <Services />
+
+      <SocialMedia />
     </main>
   );
 }
