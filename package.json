@@ -34,7 +34,8 @@
     "sharp": "^0.33.2",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
-    "usehooks-ts": "^3.0.1"
+    "usehooks-ts": "^3.0.1",
+    "ytfps": "^1.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.0",

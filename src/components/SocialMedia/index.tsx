@@ -1,4 +1,5 @@
 import { FaInstagram, FaYoutube } from 'react-icons/fa';
+import ytfps from 'ytfps';
 
 import {
   Carousel,
@@ -8,8 +9,11 @@ import {
   CarouselPrevious
 } from '@/components/ui/carousel';
 import SectionHeader from '../SectionHeader';
+import Video from '../Video';
 
-const SocialMedia: React.FC = () => {
+const SocialMedia: React.FC = async () => {
+  const videos = await ytfps('PLoZQ-oDhkHnba6xeHE9hJHPj8ae-RQvMr');
+
   return (
     <section className="container mx-auto text-neutral-800 py-28">
       <SectionHeader
@@ -33,24 +37,19 @@ const SocialMedia: React.FC = () => {
         </div>
 
         <div className="flex bg-neutral-50 rounded-lg shadow-lg p-5 gap-8 items-center">
-          <Carousel className="w-full">
+          <Carousel
+            className="w-full"
+            opts={{
+              skipSnaps: true
+            }}
+          >
             <CarouselPrevious />
             <CarouselContent>
-              <CarouselItem className="basis-1/3">
-                <div className="w-full h-auto aspect-video bg-red-200 rounded-lg"></div>
-              </CarouselItem>
-              <CarouselItem className="basis-1/3">
-                <div className="w-full h-auto aspect-video bg-red-200 rounded-lg"></div>
-              </CarouselItem>
-              <CarouselItem className="basis-1/3">
-                <div className="w-full h-auto aspect-video bg-red-200 rounded-lg"></div>
-              </CarouselItem>
-              <CarouselItem className="basis-1/3">
-                <div className="w-full h-auto aspect-video bg-red-200 rounded-lg"></div>
-              </CarouselItem>
-              <CarouselItem className="basis-1/3">
-                <div className="w-full h-auto aspect-video bg-red-200 rounded-lg"></div>
-              </CarouselItem>
+              {videos.videos.map((video) => (
+                <CarouselItem key={video.id} className="basis-1/3">
+                  <Video id={video.id} title={video.title} />
+                </CarouselItem>
+              ))}
             </CarouselContent>
             <CarouselNext />
           </Carousel>
