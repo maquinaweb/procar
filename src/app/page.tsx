@@ -1,4 +1,5 @@
 import Brands from '@/components/Brands';
+import OurNumbers from '@/components/OurNumbers';
 import Welcome from '@/components/Welcome';
 
 function Home() {
@@ -7,6 +8,8 @@ function Home() {
       <Welcome />
 
       <Brands />
+
+      <OurNumbers />
     </main>
   );
 }
