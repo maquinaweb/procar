@@ -15,7 +15,7 @@ const Video: React.FC<{
       <DialogTrigger asChild>
         <div className="relative aspect-video h-auto flex justify-center items-center cursor-pointer transition-[filter] duration-500 hover:brightness-125 active:brightness-90">
           <Image
-            src={`https://i3.ytimg.com/vi/${id}/maxresdefault.jpg`}
+            src={`https://i.ytimg.com/vi_webp/${id}/sddefault.webp`}
             alt="Guy image"
             className="w-full select-none pointer-events-none object-cover rounded-lg border-2 border-neutral-800 brightness-50"
             fill
