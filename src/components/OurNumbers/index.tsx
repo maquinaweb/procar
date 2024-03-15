@@ -7,7 +7,7 @@ import SectionHeader from '../SectionHeader';
 const OurNumbers: React.FC = () => {
   return (
     <section className="bg-neutral-200 text-neutral-800 w-full py-20">
-      <div className="flex flex-col gap-8 container mx-auto">
+      <div className="flex flex-col gap-8 container max-w-5xl mx-auto">
         <SectionHeader
           title="Nossos números"
           description="Veja o que define nossa jornada e compromisso com a excelência."
