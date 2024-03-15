@@ -1,0 +1,26 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/*lock*": true,
+    "**/next-env.d.ts": true,
+    ".vscode": true,
+    ".next": true,
+    ".github": true,
+    ".husky": true,
+    ".editorconfig": true,
+    ".commitlintrc.json": true,
+    ".eslintrc": true,
+    ".prettierrc": true,
+    "tsconfig.json": true,
+    "renovate.json": true,
+    ".gitignore": true,
+    ".npmrc": true,
+    ".tool-versions": true,
+    ".prettierrc.json": true,
+    "postcss.config.js": true,
+    "commitlint.config.js": true,
+    "components.json": true,
+    "tsconfig.tsbuildinfo": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

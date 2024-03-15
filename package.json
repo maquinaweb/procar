@@ -6,7 +6,7 @@
   "author": "Maquinaweb <arte@maquinaweb.com.br> (@maquinaweb)",
   "type": "module",
   "scripts": {
-    "dev": "next",
+    "dev": "next --turbo",
     "build": "next build",
     "start": "next start",
     "type-check": "tsc --noEmit",
@@ -24,7 +24,10 @@
   "dependencies": {
     "next": "14.1.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^5.0.1",
+    "tailwind-merge": "^2.2.1",
+    "usehooks-ts": "^3.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.0",
@@ -36,6 +39,7 @@
     "@types/react-dom": "18.2.20",
     "@typescript-eslint/eslint-plugin": "7.1.1",
     "@typescript-eslint/parser": "7.1.1",
+    "autoprefixer": "^10.4.18",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.57.0",
@@ -47,8 +51,10 @@
     "husky": "9.0.11",
     "inquirer": "9",
     "lint-staged": "15.2.2",
+    "postcss": "^8.4.35",
     "prettier": "3.2.5",
     "prettier-plugin-sort-json": "3.1.0",
+    "tailwindcss": "^3.4.1",
     "typescript": "5.3.3"
   },
   "config": {
