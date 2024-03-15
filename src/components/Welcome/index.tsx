@@ -8,7 +8,7 @@ const Welcome: React.FC = () => {
       <Image
         src={welcomeBackgroundImage}
         alt="Logo"
-        className="w-full h-auto object-cover select-none -z-10"
+        className="w-full h-auto object-cover select-none"
         placeholder="blur"
         priority
       />
