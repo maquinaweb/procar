@@ -3,7 +3,7 @@ import Video from '../Video';
 
 const Services: React.FC = () => {
   return (
-    <section className="bg-neutral-200 text-neutral-800 w-full py-20">
+    <section className="bg-neutral-200 text-neutral-800 w-full py-28">
       <div className="flex flex-col gap-8 container px-16 mx-auto">
         <SectionHeader
           title="Nossos serviços"

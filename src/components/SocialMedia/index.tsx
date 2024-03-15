@@ -11,7 +11,7 @@ import SectionHeader from '../SectionHeader';
 
 const SocialMedia: React.FC = () => {
   return (
-    <section className="container mx-auto text-neutral-800">
+    <section className="container mx-auto text-neutral-800 py-28">
       <SectionHeader
         title="Nossas redes sociais"
         description="Acompanhe nossas redes sociais, sempre mostramos nossos projetos, o próximo pode ser o seu!"

@@ -4,6 +4,7 @@ import './globals.css';
 
 import { Inter as FontSans } from 'next/font/google';
 
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import { cn } from '@/lib/utils';
 
@@ -33,6 +34,8 @@ export default function RootLayout({
         <Header />
 
         {children}
+
+        <Footer />
       </body>
     </html>
   );

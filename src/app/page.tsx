@@ -7,7 +7,7 @@ import Welcome from '@/components/Welcome';
 
 function Home() {
   return (
-    <main className="flex flex-col bg-neutral-50 gap-12">
+    <main className="flex flex-col bg-neutral-50">
       <Welcome />
 
       <Brands />
