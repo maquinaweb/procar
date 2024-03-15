@@ -1,4 +1,5 @@
 import Brands from '@/components/Brands';
+import Gallery from '@/components/Gallery';
 import OurNumbers from '@/components/OurNumbers';
 import Welcome from '@/components/Welcome';
 
@@ -10,6 +11,8 @@ function Home() {
       <Brands />
 
       <OurNumbers />
+
+      <Gallery />
     </main>
   );
 }
