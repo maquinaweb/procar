@@ -1,4 +1,5 @@
 import Brands from '@/components/Brands';
+import ContactUs from '@/components/ContactUs';
 import Gallery from '@/components/Gallery';
 import OurNumbers from '@/components/OurNumbers';
 import Services from '@/components/Services';
@@ -19,6 +20,8 @@ function Home() {
       <Services />
 
       <SocialMedia />
+
+      <ContactUs />
     </main>
   );
 }
