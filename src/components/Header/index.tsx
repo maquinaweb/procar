@@ -44,7 +44,7 @@ const Header: React.FC = () => {
             'bg-neutral-900 text-xs text-neutral-50 py-2 border-b border-neutral-400/20'
           )}
         >
-          <div className="flex justify-between mx-auto container">
+          <div className="flex justify-between mx-auto container px-3">
             <div className="flex items-center gap-3">
               <FaClock size={15} />
               <p>Seg - Sex 8h às 18h</p>
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
             <ul className="flex gap-3 items-center">
               <li className="flex items-center gap-2 cursor-pointer">
                 <FaPhone size={16} />
-                <p>0800 444 1144</p>
+                <p className="hidden sm:block">0800 444 1144</p>
               </li>
               <li className="cursor-pointer transition-colors hover:text-neutral-400">
                 <FaInstagram size={16} />
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
           <div className="w-full h-full absolute top-0 bg-noise opacity-15 -z-10" />
           <div
             className={twMerge(
-              'flex flex-col h-fit lg:overflow-visible lg:h-auto lg:flex-row lg:justify-between items-center container mx-auto',
+              'flex flex-col h-fit lg:overflow-visible lg:h-auto lg:flex-row lg:justify-between items-center container px-3 mx-auto',
               menuIsOpen && 'h-dvh gap-16 sm:pb-16 lg:pb-3 lg:h-fit'
             )}
           >

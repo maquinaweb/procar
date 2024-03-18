@@ -10,7 +10,7 @@ import SectionHeader from '../SectionHeader';
 
 const Brands: React.FC = () => {
   return (
-    <section className="container mx-auto flex flex-col gap-10 py-28">
+    <section className="container mx-auto flex flex-col gap-10 px-3 py-28">
       <SectionHeader
         title="Marcas que atendemos"
         description="Trabalhamos com todo tipo de caminhonete, mas aqui estão as

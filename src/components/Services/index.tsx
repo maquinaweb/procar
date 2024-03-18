@@ -12,10 +12,10 @@ const Services: React.FC = () => {
 
         <div className="flex flex-col lg:flex-row items-center gap-x-16 2xl:gap-x-40 gap-y-8">
           <div className="flex flex-col basis-1/2 gap-3">
-            <h3 className="font-bold text-xl md:text-2xl">
+            <h3 className="font-bold text-lg sm:text-xl md:text-2xl text-center sm:text-start">
               Restauração de Exterior
             </h3>
-            <p className="text-sm md:text-base">
+            <p className="text-sm md:text-base text-justify sm:text-start">
               Nessa caminhonete aqui, fizemos todo o exterior e
               interior dela, dá uma olhada no vídeo para vocês verem
               que legal! Exterior todo em branco pérola, muita atenção
@@ -37,10 +37,10 @@ const Services: React.FC = () => {
             />
           </div>
           <div className="flex flex-col basis-1/2 gap-3">
-            <h3 className="font-bold text-xl md:text-2xl">
+            <h3 className="font-bold text-lg sm:text-xl md:text-2xl text-center sm:text-start">
               Troca do interior do veículo
             </h3>
-            <p className="text-sm md:text-base">
+            <p className="text-sm md:text-base text-justify sm:text-start">
               Caminhonete com o interior inteiro reformado, acabamento
               feito, 100% de atenção nos detalhes, multimídia 2 Din,
               troca das peças do interior com peças de fabricação

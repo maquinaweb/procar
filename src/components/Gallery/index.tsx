@@ -29,7 +29,7 @@ const Gallery: React.FC = () => {
                 />
               ))}
             </div>
-            <p className="px-3 py-2 font-bold text-neutral-700">
+            <p className="px-3 py-2 text-sm sm:text-base font-semibold md:font-bold text-neutral-700">
               {work.title}
             </p>
           </li>
