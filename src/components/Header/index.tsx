@@ -14,6 +14,7 @@ import { twMerge } from 'tailwind-merge';
 import { useResizeObserver } from 'usehooks-ts';
 
 import { pages } from '@/data/pages';
+import { useScrollBelow } from '@/hooks/useScrollBelow';
 import logoImage from '@/public/icon.png';
 
 const Header: React.FC = () => {
@@ -22,11 +23,12 @@ const Header: React.FC = () => {
   const { height } = useResizeObserver({
     ref: headerRef
   });
+  const isBelow = useScrollBelow(140);
 
   const closeMenu = () => setMenuIsOpen(false);
 
   return (
-    <>
+    <div>
       <div className="bg-neutral-900 text-xs text-neutral-50 py-2 border-b border-neutral-400/20">
         <div className="flex justify-between mx-auto container">
           <div className="flex items-center gap-3">
@@ -54,7 +56,8 @@ const Header: React.FC = () => {
         className={twMerge(
           'transition-colors relative w-full !bg-neutral-900 py-2 lg:py-5 z-50 shadow-lg shadow-neutral-900 top-0 lg:animate-fadeInDown',
           menuIsOpen &&
-            'fixed z-50 w-full bg-primary-900 lg:relative lg:bg-transparent'
+            'fixed z-50 w-full bg-primary-900 lg:relative lg:bg-transparent',
+          isBelow && 'fixed animate-down'
         )}
         ref={headerRef}
       >
@@ -109,12 +112,16 @@ const Header: React.FC = () => {
         </div>
       </header>
       <div
-        className={twMerge('lg:hidden', menuIsOpen && 'hidden')}
+        className={twMerge(
+          'lg:hidden',
+          menuIsOpen && 'hidden',
+          isBelow && '!block'
+        )}
         style={{
           height: (height || 0) + 8
         }}
       />
-    </>
+    </div>
   );
 };
 
