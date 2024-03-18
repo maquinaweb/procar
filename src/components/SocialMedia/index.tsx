@@ -15,7 +15,7 @@ const SocialMedia: React.FC = async () => {
   const videos = await ytfps('PLoZQ-oDhkHnba6xeHE9hJHPj8ae-RQvMr');
 
   return (
-    <section className="container mx-auto text-neutral-800 px-3 py-28">
+    <section className="container mx-auto text-neutral-800 px-3 py-14 lg:py-28">
       <SectionHeader
         title="Nossas redes sociais"
         description="Acompanhe nossas redes sociais, sempre mostramos nossos projetos, o próximo pode ser o seu!"
