@@ -53,11 +53,6 @@ const NewBranch: React.FC = () => {
               placeholder="Cidade"
             />
             <SelectState form={form} />
-            {/* <input
-            type="text"
-            className="w-full py-2 px-4 rounded-lg text-sm placeholder:text-neutral-500 outline-none border bg-neutral-100 border-neutral-200 transition-all focus:brightness-105"
-            placeholder="Estado"
-          /> */}
           </div>
 
           <button className="flex mt-2 self-center h-fit w-fit rounded-md gap-3 items-center px-5 py-2 text-neutral-50 bg-red-900 text-sm font-semibold transition-all hover:brightness-90 active:brightness-110">
