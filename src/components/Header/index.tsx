@@ -28,7 +28,12 @@ const Header: React.FC = () => {
   const closeMenu = () => setMenuIsOpen(false);
 
   return (
-    <div>
+    <div
+      className={twMerge(
+        menuIsOpen &&
+          'fixed z-50 w-full bg-primary-900 lg:relative lg:bg-transparent'
+      )}
+    >
       <div className="bg-neutral-900 text-xs text-neutral-50 py-2 border-b border-neutral-400/20">
         <div className="flex justify-between mx-auto container">
           <div className="flex items-center gap-3">
@@ -54,9 +59,7 @@ const Header: React.FC = () => {
       </div>
       <header
         className={twMerge(
-          'transition-colors relative w-full !bg-neutral-900 py-2 lg:py-5 z-50 shadow-lg shadow-neutral-900 top-0 lg:animate-fadeInDown',
-          menuIsOpen &&
-            'fixed z-50 w-full bg-primary-900 lg:relative lg:bg-transparent',
+          'transition-colors relative w-full !bg-neutral-900 py-2 lg:py-5 z-50 shadow-sm lg:shadow-lg shadow-neutral-900 top-0 lg:animate-fadeInDown',
           isBelow && 'fixed animate-down'
         )}
         ref={headerRef}
@@ -68,16 +71,26 @@ const Header: React.FC = () => {
             menuIsOpen && 'h-dvh gap-16 sm:pb-16 lg:pb-3 lg:h-fit'
           )}
         >
-          <div className="hidden lg:w-fit lg:flex justify-center items-center">
+          <div className="w-full flex justify-between lg:w-fit items-center">
             <Link href="/">
               <Image
                 src={logoImage}
-                className="absolute bottom-0 translate-y-1/4 w-24 h-24"
+                className="absolute top-0 translate-y-[10%] lg:translate-y-[10%] w-16 h-16 lg:w-24 lg:h-24 z-50"
                 alt="Logo image"
                 priority
               />
             </Link>
-            <div className="w-24 h-0" />
+            <div className="w-16 lg:w-24 h-0 flex" />
+
+            <button
+              className={twMerge(
+                'flex iconMenu lg:hidden',
+                menuIsOpen && 'closed'
+              )}
+              onClick={() => setMenuIsOpen(!menuIsOpen)}
+            >
+              <span />
+            </button>
           </div>
 
           <nav
@@ -113,7 +126,7 @@ const Header: React.FC = () => {
       </header>
       <div
         className={twMerge(
-          'lg:hidden',
+          'hidden lg:hidden',
           menuIsOpen && 'hidden',
           isBelow && '!block'
         )}

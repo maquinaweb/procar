@@ -5,13 +5,13 @@ import SectionHeader from '../SectionHeader';
 
 const Gallery: React.FC = () => {
   return (
-    <section className="container mx-auto flex flex-col gap-8 py-28 text-neutral-800">
+    <section className="container mx-auto flex flex-col gap-8 px-3 py-28 text-neutral-800">
       <SectionHeader
         title="Galeria de obras"
         description="Veja imagens detalhadas de peças e reformas que realçam nosso trabalho dedicado em aprimorar veículos."
       />
 
-      <ul className="grid grid-cols-4 gap-4">
+      <ul className="grid grid-cols-2 lg:grid-cols-4 gap-2">
         {works.map((work, index) => (
           <li
             key={`work-${index}`}

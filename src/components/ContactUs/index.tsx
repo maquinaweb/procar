@@ -6,13 +6,13 @@ import SectionHeader from '../SectionHeader';
 const ContactUs: React.FC = () => {
   return (
     <section className="bg-neutral-200 text-neutral-800 w-full py-28">
-      <div className="flex flex-col gap-8 container px-16 mx-auto">
+      <div className="flex flex-col gap-8 container px-3 md:px-16 mx-auto">
         <SectionHeader
           title="Fale conosco"
           description="Estamos aqui para responder às suas perguntas e ouvir suas sugestões. Entre em contato para uma comunicação fácil e rápida."
         />
 
-        <div className="grid grid-cols-2 items-center gap-x-40 gap-y-8">
+        <div className="grid lg:grid-cols-2 items-center gap-x-16 2xl:gap-x-40 gap-y-8">
           <form className="flex flex-col gap-2">
             <input
               type="text"
@@ -42,29 +42,29 @@ const ContactUs: React.FC = () => {
             </button>
           </form>
           <div>
-            <ul className="flex flex-col gap-4">
+            <ul className="flex flex-col gap-4 text-xs md:text-base">
               <li className="flex gap-2 items-center">
-                <div className="w-fit h-fit border border-neutral-800 rounded-full text-base p-2 hover:bg-neutral-800 hover:text-neutral-50 transition-colors">
+                <div className="w-fit h-fit border border-neutral-800 rounded-full p-2 hover:bg-neutral-800 hover:text-neutral-50 transition-colors">
                   <FaLocationDot />
                 </div>
                 Rua Martinópolis, 780 - Jardim Del Rey, Catanduva -
                 SP, 15800-050
               </li>
               <li className="flex gap-2 items-center">
-                <div className="w-fit h-fit border border-neutral-800 rounded-full text-base p-2 hover:bg-neutral-800 hover:text-neutral-50 transition-colors">
+                <div className="w-fit h-fit border border-neutral-800 rounded-full p-2 hover:bg-neutral-800 hover:text-neutral-50 transition-colors">
                   <FaClock />
                 </div>
                 Seg - Sex 8h às 18h
               </li>
-              <div className="flex gap-4">
+              <div className="flex flex-col lg:flex-row gap-4">
                 <li className="flex gap-2 items-center">
-                  <div className="w-fit h-fit border border-neutral-800 rounded-full text-base p-2 hover:bg-neutral-800 hover:text-neutral-50 transition-colors">
+                  <div className="w-fit h-fit border border-neutral-800 rounded-full p-2 hover:bg-neutral-800 hover:text-neutral-50 transition-colors">
                     <FaPhone />
                   </div>
                   0800 444 1144
                 </li>
                 <li className="flex gap-2 items-center">
-                  <div className="w-fit h-fit border border-neutral-800 rounded-full text-base p-2 hover:bg-neutral-800 hover:text-neutral-50 transition-colors">
+                  <div className="w-fit h-fit border border-neutral-800 rounded-full p-2 hover:bg-neutral-800 hover:text-neutral-50 transition-colors">
                     <TbMailFilled />
                   </div>
                   procar.automotiva@hotmail.com

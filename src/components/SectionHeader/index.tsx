@@ -11,7 +11,7 @@ const SectionHeader: React.FC<{
         <hr className="w-64 border-red-700" />
         <hr className="w-32 border-red-700" />
       </div>
-      <h2 className="w-1/3 text-center text-neutral-600">
+      <h2 className="w-full md:w-2/3 2xl:w-1/3 text-sm md:text-base text-center text-neutral-600">
         {description}
       </h2>
     </div>
