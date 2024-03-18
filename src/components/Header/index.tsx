@@ -17,7 +17,14 @@ import { pages } from '@/data/pages';
 import { useScrollBelow } from '@/hooks/useScrollBelow';
 import logoImage from '@/public/icon.png';
 
-const Header: React.FC = () => {
+const themes = {
+  light: 'bg-neutral-50 text-neutral-900',
+  dark: 'bg-neutral-900 text-neutral-50'
+};
+
+const Header: React.FC<{
+  theme?: 'light' | 'dark';
+}> = ({ theme = 'dark' }) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const { height: menuHeight } = useResizeObserver({
@@ -41,7 +48,8 @@ const Header: React.FC = () => {
       >
         <div
           className={twMerge(
-            'bg-neutral-900 text-xs text-neutral-50 py-2 border-b border-neutral-400/20'
+            'text-xs py-2 border-b border-neutral-400/20',
+            themes[theme]
           )}
         >
           <div className="flex justify-between mx-auto container px-3">
@@ -66,7 +74,12 @@ const Header: React.FC = () => {
             </ul>
           </div>
         </div>
-        <header className="transition-colors relative w-full !bg-neutral-900 py-2 lg:py-5 z-50 shadow-sm lg:shadow-lg shadow-neutral-900 top-0">
+        <header
+          className={twMerge(
+            'transition-colors relative w-full py-2 lg:py-5 z-50 shadow-sm lg:shadow-lg shadow-neutral-900 top-0',
+            themes[theme]
+          )}
+        >
           <div className="w-full h-full absolute top-0 bg-noise opacity-15 -z-10" />
           <div
             className={twMerge(
@@ -102,7 +115,7 @@ const Header: React.FC = () => {
                 menuIsOpen && 'flex flex-col gap-4'
               )}
             >
-              <ul className="flex flex-col gap-8 lg:flex-row lg:gap-6 items-center text-blue-100 *:cursor-pointer">
+              <ul className="flex flex-col gap-8 lg:flex-row lg:gap-6 items-center *:cursor-pointer">
                 {pages.map((page) => (
                   <Link
                     key={page.slug}
