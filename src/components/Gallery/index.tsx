@@ -1,7 +1,8 @@
-import Image from 'next/image';
+import Link from 'next/link';
 
 import { works } from '@/data/works';
 import SectionHeader from '../SectionHeader';
+import WorkCard from '../WorkCard';
 
 const Gallery: React.FC = () => {
   return (
@@ -13,32 +14,17 @@ const Gallery: React.FC = () => {
 
       <ul className="grid grid-cols-2 lg:grid-cols-4 gap-2">
         {works.map((work, index) => (
-          <li
-            key={`work-${index}`}
-            className="flex flex-col bg-neutral-100 rounded-md overflow-hidden shadow-lg"
-          >
-            <div className="grid grid-cols-2">
-              {work.images.slice(0, 4).map((image, index) => (
-                <Image
-                  key={`image-${index}`}
-                  src={image}
-                  alt="Work"
-                  className="w-full aspect-video object-cover"
-                  width={135}
-                  height={100}
-                />
-              ))}
-            </div>
-            <p className="px-3 py-2 text-sm sm:text-base font-semibold md:font-bold text-neutral-700">
-              {work.title}
-            </p>
-          </li>
+          <Link href={`/obras/${index}`} key={`work-${index}`}>
+            <WorkCard work={work} />
+          </Link>
         ))}
       </ul>
 
-      <button className="flex self-center h-fit w-fit rounded-md gap-3 items-center px-5 py-2 text-neutral-50 bg-red-900 text-sm font-semibold transition-all hover:brightness-90 active:brightness-110">
-        Veja mais
-      </button>
+      <Link href="/obras" className="self-center w-fit">
+        <button className="flex h-fit w-fit rounded-md gap-3 items-center px-5 py-2 text-neutral-50 bg-red-900 text-sm font-semibold transition-all hover:brightness-90 active:brightness-110">
+          Veja mais
+        </button>
+      </Link>
     </section>
   );
 };

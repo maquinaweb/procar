@@ -1,38 +1,46 @@
 export const works = [
   {
-    title: 'Silverado - 1997',
+    title: 'Tahoe - 1998',
     images: [
       '/works/silverado-1997/1.png',
       '/works/silverado-1997/2.png',
       '/works/silverado-1997/3.png',
       '/works/silverado-1997/4.png'
-    ]
+    ],
+    description:
+      'A Chevrolet Tahoe é um SUV robusto e elegante, projetado para oferecer conforto, segurança e desempenho. Como um veículo de alto nível, a Tahoe requer um cuidado especial para manter sua aparência impecável e suas características funcionais intactas. Neste relatório, apresentaremos um resumo dos serviços de estética automotiva realizados em uma Chevrolet Tahoe.\n\nPrimeiramente, foi realizada uma inspeção detalhada do veículo para avaliar suas condições atuais. Foi verificado que a pintura da Tahoe apresentava alguns sinais de desgaste, como arranhões superficiais e pequenas manchas de água. Além disso, os estofamentos dos bancos estavam um pouco sujos e os tapetes apresentavam algumas manchas. Com base nessas observações, foi elaborado um plano de estética automotiva para a Tahoe.\n\nO primeiro passo foi realizar uma lavagem completa do veículo, utilizando técnicas e produtos específicos para remover toda a sujeira acumulada na superfície. Foi utilizada uma solução de pré-lavagem para soltar a sujeira mais pesada e em seguida, aplicado um shampoo neutro e esfregado com uma escova macia para evitar riscos na pintura.\nApós a lavagem, foram identificados e tratados os arranhões e manchas na pintura, utilizando técnicas de polimento e espelhamento. Foi utilizado um composto de polimento de alta qualidade e um disco de espuma macia para restaurar a superfície da pintura. Em seguida, foi aplicado um selante de pintura para proteger a superfície contra os efeitos do sol e da chuva.\n\nPara os estofamentos dos bancos, foram realizadas técnicas de limpeza a seco e extração a vácuo, utilizando produtos de alta qualidade para remover todas as manchas e sujeiras presentes. As técnicas empregadas foram cuidadosas para não danificar os tecidos e respeitar as cores originais.\n\nPor fim, foram realizadas técnicas de limpeza nos tapetes, utilizando produtos específicos e equipamentos de extração a vácuo para remover todas as manchas e sujeiras. Foi aplicado um produto protetor de tecidos para manter a aparência dos tapetes por mais tempo.\n\nEm conclusão, a estética automotiva realizada na Chevrolet Tahoe foi um sucesso, proporcionando a restauração completa do veículo e garantindo a satisfação do cliente. A ProCar Estética Automotiva está sempre comprometida com a excelência em seus serviços e com a satisfação de seus clientes.'
   },
   {
-    title: 'Silverado - 1997',
+    title: 'F250 - 2016',
     images: [
       '/works/silverado-1997/1.png',
       '/works/silverado-1997/2.png',
       '/works/silverado-1997/3.png',
       '/works/silverado-1997/4.png'
-    ]
+    ],
+    description:
+      'A Ford F250 é uma caminhonete robusta e potente, projetada para oferecer desempenho superior e confiabilidade. Como um veículo de alta qualidade, a F250 requer cuidados especiais para manter sua aparência impecável e suas características funcionais intactas. Neste relatório, apresentaremos um resumo dos serviços de estética automotiva realizados em uma Ford F250.\n\nAo realizar uma inspeção detalhada do veículo, constatamos que a pintura da F250 estava em excelente estado, sem sinais visíveis de desgaste, arranhões ou manchas. Os estofamentos dos bancos estavam limpos e bem conservados, e os tapetes pareciam novos, sem nenhuma mancha aparente. Com base nessas observações, foi elaborado um plano de estética automotiva para a F250.\n\nO primeiro passo foi realizar uma lavagem completa do veículo, utilizando técnicas e produtos específicos para remover qualquer sujeira acumulada na superfície. Foi aplicado um shampoo de alta qualidade e esfregado com uma escova macia para garantir uma limpeza eficiente, sem comprometer a integridade da pintura.\n\nAlém disso, foram aplicados produtos de proteção na pintura, como ceras e selantes, para manter a F250 protegida contra os efeitos do sol e da chuva. Esses produtos ajudam a preservar o brilho e a aparência da pintura, garantindo sua durabilidade ao longo do tempo.\n\nOs estofamentos dos bancos receberam uma limpeza completa, utilizando produtos de alta qualidade para remover qualquer sujeira ou mancha presente. As técnicas de limpeza foram cuidadosamente realizadas para não danificar os tecidos e manter as cores originais dos bancos.\n\nQuanto aos tapetes, foram submetidos a uma limpeza profunda utilizando equipamentos de extração a vácuo e produtos específicos. Essa técnica garantiu a remoção completa de qualquer sujeira ou mancha, deixando os tapetes com aparência de novos.\n\nEm conclusão, a estética automotiva realizada na Ford F250 foi excepcional, garantindo a preservação e aprimoramento da aparência do veículo. A empresa de estética automotiva em questão está comprometida em oferecer serviços de alta qualidade e satisfazer plenamente seus clientes. Recomendo a todos os proprietários de caminhonetes F250 que busquem os serviços da ProCar Estética Automotiva para manter seus veículos em condições impecáveis.'
   },
   {
-    title: 'Silverado - 2004',
+    title: 'Silverado - 2005',
     images: [
       '/works/silverado-2004/1.png',
       '/works/silverado-2004/2.png',
       '/works/silverado-2004/3.png',
       '/works/silverado-2004/4.png'
-    ]
+    ],
+    description:
+      'Recentemente, tive o prazer de levar minha Chevrolet Silverado 2005 à estética automotiva da ProCar para realizar uma reforma completa em seu interior, incluindo os bancos. Estou extremamente satisfeito com os resultados surpreendentes alcançados pela equipe da ProCar.\n\nAo chegar à estética automotiva, fui recebido por uma equipe experiente e dedicada, pronta para transformar o interior da minha Silverado. Eles começaram realizando uma avaliação minuciosa do estado dos bancos e dos demais componentes do interior.\n\nOs bancos da minha Silverado estavam desgastados e precisavam de uma renovação completa. A equipe da ProCar mostrou um excelente trabalho ao utilizar técnicas de restauração especializadas. Eles realizaram um trabalho minucioso de reestofamento, utilizando materiais de alta qualidade que combinavam perfeitamente com o estilo e a aparência original da Silverado.\n\nAlém da renovação dos bancos, a equipe da ProCar também se dedicou à limpeza profunda de todo o interior da minha caminhonete. Utilizando produtos de limpeza de qualidade e equipamentos especializados, eles removeram todas as manchas e sujeiras, deixando o interior da Silverado impecável.\n\nFiquei impressionado com a atenção aos detalhes demonstrada pela equipe da ProCar. Eles foram cuidadosos ao preservar as características originais do interior da minha Silverado, garantindo que cada componente fosse tratado com o devido cuidado. O resultado final foi uma transformação notável que superou todas as minhas expectativas.\n\nEm conclusão, a ProCar Estética Automotiva fez um trabalho excepcional na reforma do interior da minha Chevrolet Silverado 2005. Os bancos foram renovados com maestria e o interior da caminhonete foi limpo e restaurado, proporcionando uma experiência completamente nova e agradável ao dirigir. Recomendo fortemente a ProCar Estética Automotiva a todos os proprietários de Silverado que desejam um serviço de qualidade e um resultado final impressionante.'
   },
   {
-    title: 'Silverado - 1999',
+    title: 'Silverado - 2011',
     images: [
       '/works/silverado-1999/1.png',
       '/works/silverado-1999/2.png',
       '/works/silverado-1999/3.png',
       '/works/silverado-1999/4.png'
-    ]
+    ],
+    description:
+      'Recentemente, decidi levar minha Chevrolet Silverado 2011 à estética automotiva da ProCar para realizar uma reforma completa em seu interior, e estou extremamente satisfeito com os resultados alcançados pela equipe da ProCar.\n\nAo chegar à estética automotiva, fui recebido por uma equipe altamente profissional e dedicada, pronta para transformar o interior da minha Silverado. Eles iniciaram o processo realizando uma avaliação minuciosa do estado dos bancos e de todos os componentes internos.\n\nOs bancos da minha Silverado estavam desgastados e necessitavam de uma renovação completa. A equipe da ProCar mostrou um trabalho excepcional ao utilizar técnicas especializadas de reestofamento. Eles utilizaram materiais de alta qualidade que não só restauraram a aparência original dos bancos, mas também garantiram conforto e durabilidade a longo prazo.\n\nAlém da renovação dos bancos, a equipe da ProCar se dedicou à limpeza profunda de todo o interior da minha caminhonete. Eles utilizaram produtos de limpeza específicos e equipamentos especializados para remover todas as manchas, sujeiras e odores indesejados. Fiquei impressionado com o resultado final, pois o interior da minha Silverado parecia novo novamente.\n\nA ProCar também foi cuidadosa ao preservar as características originais do interior da minha Silverado durante o processo de reforma. Eles garantiram que cada componente fosse tratado com o devido cuidado e atenção aos detalhes. O resultado final foi um interior renovado, com acabamentos impecáveis e uma sensação de conforto e qualidade.\n\nEstou extremamente satisfeito com os serviços de reforma de interior realizados pela ProCar Estética Automotiva na minha Chevrolet Silverado 2011. A equipe da ProCar demonstrou habilidade e profissionalismo em todos os aspectos do trabalho realizado. Recomendo fortemente a ProCar Estética Automotiva a todos os proprietários de Silverado que desejam um serviço de alta qualidade para transformar o interior de suas caminhonetes e proporcionar uma experiência de condução agradável e confortável.'
   }
 ];

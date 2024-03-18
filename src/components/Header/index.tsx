@@ -18,8 +18,8 @@ import { useScrollBelow } from '@/hooks/useScrollBelow';
 import logoImage from '@/public/icon.png';
 
 const themes = {
-  light: 'bg-neutral-50 text-neutral-900',
-  dark: 'bg-neutral-900 text-neutral-50'
+  light: 'bg-neutral-50 text-neutral-800',
+  dark: 'bg-neutral-800 text-neutral-50'
 };
 
 const Header: React.FC<{
@@ -76,7 +76,7 @@ const Header: React.FC<{
         </div>
         <header
           className={twMerge(
-            'transition-colors relative w-full py-2 lg:py-5 z-50 shadow-sm lg:shadow-lg shadow-neutral-900 top-0',
+            'transition-colors relative w-full py-2 lg:py-5 z-50 shadow-sm lg:shadow-lg shadow-neutral-800 top-0',
             themes[theme]
           )}
         >
@@ -105,7 +105,13 @@ const Header: React.FC<{
                 )}
                 onClick={() => setMenuIsOpen(!menuIsOpen)}
               >
-                <span />
+                <span
+                  className={
+                    theme === 'light'
+                      ? 'bg-neutral-800 before:bg-neutral-800 after:bg-neutral-800'
+                      : 'bg-neutral-50 before:bg-neutral-50 after:bg-neutral-50'
+                  }
+                />
               </button>
             </div>
 
