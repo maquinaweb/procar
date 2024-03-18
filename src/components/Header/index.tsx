@@ -19,11 +19,7 @@ import logoImage from '@/public/icon.png';
 
 const Header: React.FC = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const headerRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
-  const { height } = useResizeObserver({
-    ref: headerRef
-  });
   const { height: menuHeight } = useResizeObserver({
     ref: menuRef
   });
@@ -36,6 +32,7 @@ const Header: React.FC = () => {
       <div
         className={twMerge(
           'fixed top-0 w-full z-50 lg:relative',
+          isBelow && 'lg:!fixed animate-down',
           menuIsOpen &&
             'fixed z-50 w-full bg-primary-900 lg:relative lg:bg-transparent'
         )}
@@ -43,8 +40,7 @@ const Header: React.FC = () => {
       >
         <div
           className={twMerge(
-            'bg-neutral-900 text-xs text-neutral-50 py-2 border-b border-neutral-400/20',
-            isBelow && 'hidden'
+            'bg-neutral-900 text-xs text-neutral-50 py-2 border-b border-neutral-400/20'
           )}
         >
           <div className="flex justify-between mx-auto container">
@@ -69,13 +65,7 @@ const Header: React.FC = () => {
             </ul>
           </div>
         </div>
-        <header
-          className={twMerge(
-            'transition-colors relative w-full !bg-neutral-900 py-2 lg:py-5 z-50 shadow-sm lg:shadow-lg shadow-neutral-900 top-0 lg:animate-fadeInDown',
-            isBelow && 'animate-down'
-          )}
-          ref={headerRef}
-        >
+        <header className="transition-colors relative w-full !bg-neutral-900 py-2 lg:py-5 z-50 shadow-sm lg:shadow-lg shadow-neutral-900 top-0 lg:animate-fadeInDown">
           <div className="w-full h-full absolute top-0 bg-noise opacity-15 -z-10" />
           <div
             className={twMerge(
@@ -138,19 +128,15 @@ const Header: React.FC = () => {
         </header>
       </div>
       <div
-        className={twMerge(
-          'hidden lg:hidden',
-          menuIsOpen && 'hidden',
-          isBelow && '!block'
-        )}
-        style={{
-          height: (height || 0) + 8
-        }}
-      />
-      <div
         className={twMerge('lg:hidden')}
         style={{
           height: menuHeight || 0
+        }}
+      />
+      <div
+        className={twMerge('hidden', isBelow && 'lg:!block')}
+        style={{
+          height: menuHeight
         }}
       />
     </>
