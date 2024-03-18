@@ -32,7 +32,8 @@ const Header: React.FC = () => {
       <div
         className={twMerge(
           'fixed top-0 w-full z-50 lg:relative',
-          isBelow && 'lg:!fixed animate-down',
+          isBelow &&
+            'lg:!fixed animate-in slide-in-from-top duration-700',
           menuIsOpen &&
             'fixed z-50 w-full bg-primary-900 lg:relative lg:bg-transparent'
         )}
@@ -65,7 +66,7 @@ const Header: React.FC = () => {
             </ul>
           </div>
         </div>
-        <header className="transition-colors relative w-full !bg-neutral-900 py-2 lg:py-5 z-50 shadow-sm lg:shadow-lg shadow-neutral-900 top-0 lg:animate-fadeInDown">
+        <header className="transition-colors relative w-full !bg-neutral-900 py-2 lg:py-5 z-50 shadow-sm lg:shadow-lg shadow-neutral-900 top-0">
           <div className="w-full h-full absolute top-0 bg-noise opacity-15 -z-10" />
           <div
             className={twMerge(
