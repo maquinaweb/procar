@@ -23,7 +23,7 @@ const Header: React.FC = () => {
   const { height: menuHeight } = useResizeObserver({
     ref: menuRef
   });
-  const isBelow = useScrollBelow(150);
+  const isBelow = useScrollBelow(210);
 
   const closeMenu = () => setMenuIsOpen(false);
 
@@ -31,9 +31,9 @@ const Header: React.FC = () => {
     <>
       <div
         className={twMerge(
-          'fixed top-0 w-full z-50 lg:relative',
+          'top-0 w-full z-50 lg:relative',
           isBelow &&
-            'lg:!fixed animate-in slide-in-from-top duration-700',
+            '!fixed animate-in slide-in-from-top duration-700',
           menuIsOpen &&
             'fixed z-50 w-full bg-primary-900 lg:relative lg:bg-transparent'
         )}
@@ -129,13 +129,7 @@ const Header: React.FC = () => {
         </header>
       </div>
       <div
-        className={twMerge('lg:hidden')}
-        style={{
-          height: menuHeight || 0
-        }}
-      />
-      <div
-        className={twMerge('hidden', isBelow && 'lg:!block')}
+        className={twMerge('hidden', isBelow && '!block')}
         style={{
           height: menuHeight
         }}
