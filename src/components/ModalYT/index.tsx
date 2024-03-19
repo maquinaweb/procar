@@ -9,7 +9,7 @@ const ModalYT: React.FC<{
   id: string;
 }> = ({ title, id }) => {
   return (
-    <DialogContent className="sm:max-w-6xl">
+    <DialogContent className="sm:max-w-6xl px-1 md:px-3">
       <DialogHeader>
         <DialogTitle>{title}</DialogTitle>
       </DialogHeader>
