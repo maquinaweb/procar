@@ -76,8 +76,9 @@ const Header: React.FC<{
         </div>
         <header
           className={twMerge(
-            'transition-colors relative w-full py-2 lg:py-5 z-50 shadow-sm lg:shadow-lg shadow-neutral-800 top-0',
-            themes[theme]
+            'transition-colors relative w-full py-2 lg:py-5 z-50 shadow-neutral-800 top-0',
+            themes[theme],
+            isBelow && 'shadow-sm lg:shadow-lg'
           )}
         >
           <div className="w-full h-full absolute top-0 bg-noise opacity-15 -z-10" />
@@ -140,9 +141,11 @@ const Header: React.FC<{
                 menuIsOpen && 'flex flex-col gap-8'
               )}
             >
-              <button className="flex h-fit lg:h-full rounded-md gap-3 items-center px-8 py-2 text-neutral-50 bg-red-900 text-sm font-semibold transition-all hover:brightness-90 active:brightness-110">
-                Loja
-              </button>
+              <Link href="https://loja.procarprime.com.br">
+                <button className="flex h-fit lg:h-full rounded-md gap-3 items-center px-8 py-2 text-neutral-50 bg-red-900 text-sm font-semibold transition-all hover:brightness-90 active:brightness-110">
+                  Loja
+                </button>
+              </Link>
             </div>
           </div>
         </header>

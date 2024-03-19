@@ -4,6 +4,11 @@ export const pages: {
   url: string;
 }[] = [
   {
+    name: 'Início',
+    slug: 'inicio',
+    url: '/#'
+  },
+  {
     name: 'Números',
     slug: 'numeros',
     url: '/#numeros'
@@ -19,11 +24,6 @@ export const pages: {
     url: '/#servicos'
   },
   {
-    name: 'Instagram',
-    slug: 'instagram',
-    url: 'https://www.instagram.com/obrasdouradas/'
-  },
-  {
     name: 'Fale conosco',
     slug: 'fale-conosco',
     url: '/#fale-conosco'
@@ -31,6 +31,11 @@ export const pages: {
   {
     name: 'Tenha uma filial',
     slug: 'tenha-uma-filial',
-    url: '/#tenha-uma-filial'
+    url: '/filial'
+  },
+  {
+    name: 'Instagram',
+    slug: 'instagram',
+    url: 'https://www.instagram.com/procarprime/'
   }
 ];

@@ -8,7 +8,10 @@ import SectionHeader from '../SectionHeader';
 
 const OurNumbers: React.FC = () => {
   return (
-    <section className="bg-neutral-200 text-neutral-800 w-full py-14 lg:py-28">
+    <section
+      id="numeros"
+      className="bg-neutral-200 text-neutral-800 w-full py-14 lg:py-28"
+    >
       <div className="flex flex-col gap-8 container px-3 max-w-5xl mx-auto">
         <SectionHeader
           title="Nossos números"

@@ -5,7 +5,10 @@ import SectionHeader from '../SectionHeader';
 
 const ContactUs: React.FC = () => {
   return (
-    <section className="bg-neutral-200 text-neutral-800 w-full py-14 lg:py-28">
+    <section
+      id="fale-conosco"
+      className="bg-neutral-200 text-neutral-800 w-full py-14 lg:py-28"
+    >
       <div className="flex flex-col gap-8 container px-3 md:px-16 mx-auto">
         <SectionHeader
           title="Fale conosco"

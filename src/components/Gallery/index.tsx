@@ -6,7 +6,10 @@ import WorkCard from '../WorkCard';
 
 const Gallery: React.FC = () => {
   return (
-    <section className="container mx-auto flex flex-col gap-8 px-3 py-14 lg:py-28 text-neutral-800">
+    <section
+      id="obras"
+      className="container mx-auto flex flex-col gap-8 px-3 py-14 lg:py-28 text-neutral-800"
+    >
       <SectionHeader
         title="Galeria de obras"
         description="Veja imagens detalhadas de peças e reformas que realçam nosso trabalho dedicado em aprimorar veículos."
