@@ -84,8 +84,8 @@
   justify-content: center;
   margin: 0;
   padding: 0;
-  width: 38px;
-  height: 38px;
+  width: 42px;
+  height: 40px;
   border: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -98,14 +98,14 @@
   display: block;
   left: 0;
   width: 100%;
-  height: 5px;
+  height: 6px;
   border-radius: 5px;
 }
 .iconMenu span::before {
-  top: -9px;
+  top: -10px;
 }
 .iconMenu span::after {
-  bottom: -9px;
+  bottom: -10px;
 }
 .iconMenu span::before,
 .iconMenu span::after {

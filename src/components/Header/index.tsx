@@ -93,12 +93,12 @@ const Header: React.FC<{
               <Link href="/">
                 <Image
                   src={logoImage}
-                  className="absolute top-0 translate-y-[10%] lg:translate-y-[10%] w-16 h-16 lg:w-24 lg:h-24 z-50"
+                  className="absolute top-0 translate-y-[10%] lg:translate-y-[10%] w-20 h-20 lg:w-24 lg:h-24 z-50"
                   alt="Logo image"
                   priority
                 />
               </Link>
-              <div className="w-16 lg:w-24 h-0 flex" />
+              <div className="w-20 lg:w-24 h-0 flex" />
 
               <button
                 className={twMerge(
