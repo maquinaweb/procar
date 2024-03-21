@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FaClock, FaLocationDot, FaPhone } from 'react-icons/fa6';
 import { TbMailFilled } from 'react-icons/tb';
 
@@ -61,16 +62,22 @@ const ContactUs: React.FC = () => {
               </li>
               <div className="flex flex-col lg:flex-row gap-4">
                 <li className="flex gap-2 items-center">
-                  <div className="w-fit h-fit border border-neutral-800 rounded-full p-2 hover:bg-neutral-800 hover:text-neutral-50 transition-colors">
-                    <FaPhone />
-                  </div>
-                  0800 444 1144
+                  <Link href="tel:08004441144">
+                    <div className="w-fit h-fit border border-neutral-800 rounded-full p-2 hover:bg-neutral-800 hover:text-neutral-50 transition-colors">
+                      <FaPhone />
+                    </div>
+                  </Link>
+                  <Link href="tel:08004441144">0800 444 1144</Link>
                 </li>
                 <li className="flex gap-2 items-center">
-                  <div className="w-fit h-fit border border-neutral-800 rounded-full p-2 hover:bg-neutral-800 hover:text-neutral-50 transition-colors">
-                    <TbMailFilled />
-                  </div>
-                  procar.automotiva@hotmail.com
+                  <Link href="mailto:contato@procarprime.com.br">
+                    <div className="w-fit h-fit border border-neutral-800 rounded-full p-2 hover:bg-neutral-800 hover:text-neutral-50 transition-colors">
+                      <TbMailFilled />
+                    </div>
+                  </Link>
+                  <Link href="mailto:contato@procarprime.com.br">
+                    procar.automotiva@hotmail.com
+                  </Link>
                 </li>
               </div>
             </ul>

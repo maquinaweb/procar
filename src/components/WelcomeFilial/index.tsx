@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import bannerFilialMobileImage from '@/public/banner-filial-mobile.jpg';
 import bannerFilialImage from '@/public/banner-filial.png';
 
 const WelcomeFilial: React.FC = () => {
@@ -8,7 +9,14 @@ const WelcomeFilial: React.FC = () => {
       <Image
         src={bannerFilialImage}
         alt="Logo"
-        className="w-full h-auto object-cover select-none"
+        className="hidden md:block w-full h-auto object-cover select-none"
+        placeholder="blur"
+        priority
+      />
+      <Image
+        src={bannerFilialMobileImage}
+        alt="Logo"
+        className="md:hidden w-full h-[80vw] max-h-[350px] object-cover select-none"
         placeholder="blur"
         priority
       />

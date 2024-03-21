@@ -11,7 +11,7 @@ import WorkCard from '../WorkCard';
 
 const ListWorks: React.FC = () => {
   return (
-    <section className="container mx-auto flex flex-col gap-10 px-3 py-14 lg:py-28">
+    <section className="container mx-auto flex flex-col gap-10 px-3 pt-14 lg:pt-28">
       <SectionHeader
         title="Outras restaurações"
         description="Veja aqui mais algumas demonstrações de nosso trabalho!"

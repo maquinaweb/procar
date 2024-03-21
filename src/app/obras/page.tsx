@@ -12,7 +12,7 @@ function Obras() {
       <Header theme="light" />
 
       <main className="flex flex-col bg-neutral-50">
-        <section className="container mx-auto px-3 py-36 flex flex-col gap-8">
+        <section className="container mx-auto px-3 py-12 xl:pb-36 xl:pt-28 flex flex-col gap-8">
           <SectionHeader
             title="Nossas obras"
             description="Nossa galeria de reparações!"

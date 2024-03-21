@@ -49,16 +49,22 @@ const Footer: React.FC = () => {
               </li>
               <div className="flex flex-col lg:flex-row gap-4">
                 <li className="flex gap-2 items-center">
-                  <div className="w-fit h-fit cursor-pointer border border-neutral-50 rounded-full p-2 hover:bg-neutral-50 hover:text-neutral-800 transition-colors">
-                    <FaPhone />
-                  </div>
-                  0800 444 1144
+                  <Link href="tel:08004441144">
+                    <div className="w-fit h-fit cursor-pointer border border-neutral-50 rounded-full p-2 hover:bg-neutral-50 hover:text-neutral-800 transition-colors">
+                      <FaPhone />
+                    </div>
+                  </Link>
+                  <Link href="tel:08004441144">0800 444 1144</Link>
                 </li>
                 <li className="flex gap-2 items-center">
-                  <div className="w-fit h-fit cursor-pointer border border-neutral-50 rounded-full p-2 hover:bg-neutral-50 hover:text-neutral-800 transition-colors">
-                    <TbMailFilled />
-                  </div>
-                  procar.automotiva@hotmail.com
+                  <Link href="mailto:contato@procarprime.com.br">
+                    <div className="w-fit h-fit cursor-pointer border border-neutral-50 rounded-full p-2 hover:bg-neutral-50 hover:text-neutral-800 transition-colors">
+                      <TbMailFilled />
+                    </div>
+                  </Link>
+                  <Link href="mailto:contato@procarprime.com.br">
+                    procar.automotiva@hotmail.com
+                  </Link>
                 </li>
               </div>
             </ul>
@@ -83,7 +89,7 @@ const Footer: React.FC = () => {
 
         <div className="flex flex-col items-center gap-8 md:gap-4 md:flex-row justify-between text-center">
           <p>
-            &copy; {new Date().getFullYear()} Pente Redondo. Todos os
+            &copy; {new Date().getFullYear()} Procar Prime. Todos os
             direitos reservados.
           </p>
           <div className="flex items-center gap-2">

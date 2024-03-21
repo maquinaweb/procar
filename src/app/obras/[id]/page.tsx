@@ -22,7 +22,7 @@ const Obra: NextPage<{
     <>
       <Header theme="light" />
 
-      <main className="flex flex-col bg-neutral-50 py-12 xl:py-32">
+      <main className="flex flex-col bg-neutral-50 py-12 xl:pb-28 xl:pt-20">
         <section className="container gap-12 flex flex-col-reverse items-center lg:items-start lg:flex-row mx-auto px-3">
           <div className="flex flex-col gap-4 flex-1">
             <h1 className="text-3xl font-bold text-neutral-800">

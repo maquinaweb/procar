@@ -3,17 +3,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRef, useState } from 'react';
-import {
-  FaClock,
-  FaFacebookF,
-  FaInstagram,
-  FaPhone,
-  FaYoutube
-} from 'react-icons/fa6';
+import { FaClock, FaPhone } from 'react-icons/fa6';
 import { twMerge } from 'tailwind-merge';
 import { useResizeObserver } from 'usehooks-ts';
 
 import { pages } from '@/data/pages';
+import { socialMedia } from '@/data/socialMedia';
 import { useScrollBelow } from '@/hooks/useScrollBelow';
 import logoImage from '@/public/icon.png';
 
@@ -59,18 +54,24 @@ const Header: React.FC<{
             </div>
             <ul className="flex gap-3 items-center">
               <li className="flex items-center gap-2 cursor-pointer">
-                <FaPhone size={16} />
-                <p className="hidden sm:block">0800 444 1144</p>
+                <Link href="tel:08004441144">
+                  <FaPhone size={16} />
+                </Link>
+                <Link href="tel:08004441144">
+                  <p className="hidden sm:block">0800 444 1144</p>
+                </Link>
               </li>
-              <li className="cursor-pointer transition-colors hover:text-neutral-400">
-                <FaInstagram size={16} />
-              </li>
-              <li className="cursor-pointer transition-colors hover:text-neutral-400">
-                <FaFacebookF size={16} />
-              </li>
-              <li className="cursor-pointer transition-colors hover:text-neutral-400">
-                <FaYoutube size={16} />
-              </li>
+              {socialMedia.map((social, index) => (
+                <Link
+                  key={`social-${index}`}
+                  href={social.link}
+                  target="_blank"
+                >
+                  <li className="cursor-pointer transition-colors hover:text-neutral-400">
+                    <social.icon size={16} />
+                  </li>
+                </Link>
+              ))}
             </ul>
           </div>
         </div>
