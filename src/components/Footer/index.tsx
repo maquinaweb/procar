@@ -4,8 +4,8 @@ import { FaClock, FaLocationDot, FaPhone } from 'react-icons/fa6';
 import { TbMailFilled } from 'react-icons/tb';
 
 import { socialMedia } from '@/data/socialMedia';
-import iconImage from '@/public/icon.png';
 import logoMWImage from '@/public/logo-mw.svg';
+import iconImage from '@/public/logo.png';
 
 const Footer: React.FC = () => {
   return (

@@ -34,4 +34,8 @@ function Home() {
   );
 }
 
+export const metadata = {
+  title: 'Página Inicial - Procar Prime'
+};
+
 export default Home;

@@ -32,4 +32,8 @@ function Obras() {
   );
 }
 
+export const metadata = {
+  title: 'Nossas Obras - Procar Prime'
+};
+
 export default Obras;

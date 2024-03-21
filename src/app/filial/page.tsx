@@ -1,3 +1,5 @@
+import { Metadata } from 'next';
+
 import Benefits from '@/components/Benefits';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
@@ -21,5 +23,9 @@ function Filial() {
     </>
   );
 }
+
+export const metadata: Metadata = {
+  title: 'Filial - Procar Prime'
+};
 
 export default Filial;

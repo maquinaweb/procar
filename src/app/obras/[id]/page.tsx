@@ -62,4 +62,8 @@ const Obra: NextPage<{
   );
 };
 
+export const metadata = {
+  title: 'Obra - Procar Prime'
+};
+
 export default Obra;

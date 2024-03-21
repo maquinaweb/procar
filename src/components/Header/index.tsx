@@ -10,7 +10,7 @@ import { useResizeObserver } from 'usehooks-ts';
 import { pages } from '@/data/pages';
 import { socialMedia } from '@/data/socialMedia';
 import { useScrollBelow } from '@/hooks/useScrollBelow';
-import logoImage from '@/public/icon.png';
+import logoImage from '@/public/logo.png';
 
 const themes = {
   light: 'bg-neutral-50 text-neutral-800',

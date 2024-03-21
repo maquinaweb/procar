@@ -12,8 +12,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: `TypeScript starter for Next.js by João Pedro Schmitz`,
-  description: `TypeScript starter for Next.js that includes all you need to build amazing apps`
+  title: `Procar Prime`,
+  description: `Nós da PROCAR acreditamos que seu carro nasceu para brilhar. Não perca tempo, venha conferir nossos serviços. Faça um orçamento!`
 };
 
 export default function RootLayout({
