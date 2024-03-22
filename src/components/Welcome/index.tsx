@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import welcomeBackgroundMobileImage from '@/public/welcome-background-mobile.jpg';
+import welcomeBackgroundMobileImage from '@/public/welcome-background-mobile.webp';
 import welcomeBackgroundImage from '@/public/welcome-background.jpeg';
 
 const Welcome: React.FC = () => {

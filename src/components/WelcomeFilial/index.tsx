@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import bannerFilialMobileImage from '@/public/banner-filial-mobile.jpg';
+import bannerFilialMobileImage from '@/public/banner-filial-mobile.webp';
 import bannerFilialImage from '@/public/banner-filial.png';
 
 const WelcomeFilial: React.FC = () => {
